@@ -1,168 +1,184 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium İçki Menyusu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium İçki Menyusu</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-body{
-    margin:0;
-    font-family:'Cormorant Garamond',serif;
-    background:url('bg.jpg') center/cover no-repeat fixed;
-    color:#2b2b2b;
-}
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Cormorant Garamond', serif;
+        }
 
-.overlay{
-    background:rgba(255,255,255,0.88);
-    min-height:100vh;
-    padding:40px 20px 80px;
-}
+        /* ФОН который работает на iPhone */
+        .bg-image{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            z-index:-1;
+        }
 
-h1{
-    text-align:center;
-    font-size:38px;
-    letter-spacing:4px;
-    margin-top:30px;
-}
+        body{
+            color:#fff;
+            padding:40px 20px;
+            backdrop-filter: brightness(0.85);
+        }
 
-.subtitle{
-    text-align:center;
-    font-size:18px;
-    margin-bottom:50px;
-    color:#666;
-}
+        .container{
+            max-width:800px;
+            margin:auto;
+            background:rgba(0,0,0,0.45);
+            padding:40px 25px;
+            border-radius:14px;
+        }
 
-.section{
-    max-width:700px;
-    margin:0 auto 60px;
-}
+        h1{
+            text-align:center;
+            font-size:38px;
+            margin-bottom:10px;
+            letter-spacing:2px;
+        }
 
-.section h2{
-    font-size:28px;
-    margin-bottom:20px;
-}
+        .subtitle{
+            text-align:center;
+            margin-bottom:35px;
+            font-size:18px;
+        }
 
-.item{
-    margin-bottom:28px;
-    padding-bottom:18px;
-    border-bottom:1px solid #ddd;
-}
+        h2{
+            margin-top:35px;
+            margin-bottom:15px;
+            font-size:26px;
+            border-bottom:1px solid rgba(255,255,255,0.3);
+            padding-bottom:5px;
+        }
 
-.item h3{
-    margin:0 0 8px;
-    font-size:20px;
-}
+        .item{
+            margin-bottom:18px;
+        }
 
-.item p{
-    margin:4px 0;
-    font-size:15px;
-    line-height:1.6;
-}
+        .item-title{
+            font-size:20px;
+            font-weight:600;
+        }
 
-.price{
-    margin-top:6px;
-    font-weight:500;
-}
-</style>
+        .desc{
+            font-size:15px;
+            opacity:0.9;
+            margin:3px 0;
+        }
+
+        .price{
+            margin-top:3px;
+            font-weight:600;
+        }
+
+        @media(max-width:600px){
+            h1{font-size:30px;}
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="overlay">
+<!-- ФОН -->
+<img src="bg.jpg" class="bg-image">
 
-<h1>PREMIUM İÇKİ MENYUSU</h1>
-<p class="subtitle">Zərif dadlar, sakit anlar və seçilmiş servis mədəniyyəti</p>
+<div class="container">
 
-<div class="section">
-<h2>☕ Kofe Ritualları</h2>
+    <h1>PREMIUM İÇKİ MENYUSU</h1>
+    <div class="subtitle">Zərif dadlar, sakit anlar və seçilmiş servis mədəniyyəti</div>
 
-<div class="item">
-<h3>Americano</h3>
-<p><b>AZ:</b> Saf və yüngül dad, günün hər anı üçün ideal seçim</p>
-<p><b>EN:</b> Clean and light taste, perfect for any time of day</p>
-<div class="price">5 AZN</div>
-</div>
+    <h2>☕ KOFE RİTUALLARI</h2>
 
-<div class="item">
-<h3>Cappuccino</h3>
-<p><b>AZ:</b> İpək teksturalı süd köpüyü ilə klassik İtalyan harmoniyası</p>
-<p><b>EN:</b> Classic Italian harmony with silky milk foam</p>
-<div class="price">8 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Americano</div>
+        <div class="desc">AZ: Saf və yüngül dad, günün hər anı üçün ideal seçim</div>
+        <div class="desc">EN: Clean and light taste, perfect for any time of day</div>
+        <div class="price">5 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Espresso</h3>
-<p><b>AZ:</b> Güclü, konsentrat və balanslı dad</p>
-<p><b>EN:</b> Strong, concentrated and balanced taste</p>
-<div class="price">8 AZN</div>
-</div>
-</div>
+    <div class="item">
+        <div class="item-title">Cappuccino</div>
+        <div class="desc">AZ: İpək teksturalı süd köpüyü ilə klassik İtalyan harmoniyası</div>
+        <div class="desc">EN: Classic Italian harmony with silky milk foam</div>
+        <div class="price">8 AZN</div>
+    </div>
 
-<div class="section">
-<h2>🍃 Premium Çay Kolleksiyası</h2>
-<p>Bir çaynik – 2–3 fincanlıq xüsusi spa servisi</p>
+    <div class="item">
+        <div class="item-title">Espresso</div>
+        <div class="desc">AZ: Güclü, konsentrat və balanslı dad</div>
+        <div class="desc">EN: Strong, concentrated and balanced taste</div>
+        <div class="price">8 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Böyük Yekaterina</h3>
-<p><b>AZ:</b> Zərif, balanslı və aristokratik çay kompozisiyası</p>
-<p><b>EN:</b> Delicate, balanced and aristocratic tea composition</p>
-<div class="price">6 AZN</div>
-</div>
+    <h2>🍃 PREMIUM ÇAY KOLLEKSİYASI</h2>
 
-<div class="item">
-<h3>Əfsanəvi Çay</h3>
-<p><b>AZ:</b> Dərin aroma və klassik dad harmoniyası</p>
-<p><b>EN:</b> Deep aroma and classic flavor harmony</p>
-<div class="price">6 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Böyük Yekaterina</div>
+        <div class="desc">AZ: Zərif, balanslı və aristokratik çay kompozisiyası</div>
+        <div class="desc">EN: Delicate, balanced and aristocratic tea composition</div>
+        <div class="price">6 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Kekik Otu Premium</h3>
-<p><b>AZ:</b> Rahatladıcı, təmizləyici və sakitləşdirici təsir</p>
-<p><b>EN:</b> Relaxing, cleansing and calming effect</p>
-<div class="price">6 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Əfsanəvi Çay</div>
+        <div class="desc">AZ: Dərin aroma və klassik dad harmoniyası</div>
+        <div class="desc">EN: Deep aroma and classic flavor harmony</div>
+        <div class="price">6 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Şerlok Homes</h3>
-<p><b>AZ:</b> Aromatik, xarakterli və isti notlarla zəngin</p>
-<p><b>EN:</b> Aromatic tea with character and warm notes</p>
-<div class="price">10 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Kekik Otu Premium</div>
+        <div class="desc">AZ: Rahatladıcı, təmizləyici və sakitləşdirici təsir</div>
+        <div class="desc">EN: Relaxing, cleansing and calming effect</div>
+        <div class="price">6 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Seylon Çayı</h3>
-<p><b>AZ:</b> Saf və güclü klassik dad</p>
-<p><b>EN:</b> Pure and strong classic taste</p>
-<div class="price">8 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Şerlok Homes</div>
+        <div class="desc">AZ: Aromatik, xarakterli və isti notlarla zəngin</div>
+        <div class="desc">EN: Aromatic tea with character and warm notes</div>
+        <div class="price">10 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Martinka</h3>
-<p><b>AZ:</b> Yumşaq, balanslı və harmonik çay seçimi</p>
-<p><b>EN:</b> Soft, balanced and harmonious tea selection</p>
-<div class="price">10 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Seylon Çayı</div>
+        <div class="desc">AZ: Saf və güclü klassik dad</div>
+        <div class="desc">EN: Pure and strong classic taste</div>
+        <div class="price">8 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Şantaram</h3>
-<p><b>AZ:</b> İstilik verən, balans yaradan bitki qarışımı</p>
-<p><b>EN:</b> Warming herbal blend that brings balance</p>
-<div class="price">10 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Martinka</div>
+        <div class="desc">AZ: Yumşaq, balanslı və harmonik çay seçimi</div>
+        <div class="desc">EN: Soft, balanced and harmonious tea selection</div>
+        <div class="price">10 AZN</div>
+    </div>
 
-<div class="item">
-<h3>Yaponiya Xəzinələri</h3>
-<p><b>AZ:</b> Eksklüziv, incə və premium çay kolleksiyası</p>
-<p><b>EN:</b> Exclusive, refined and premium tea collection</p>
-<div class="price">10 AZN</div>
-</div>
+    <div class="item">
+        <div class="item-title">Şantaram</div>
+        <div class="desc">AZ: İstilik verən, balans yaradan bitki qarışımı</div>
+        <div class="desc">EN: Warming herbal blend that brings balance</div>
+        <div class="price">10 AZN</div>
+    </div>
 
-</div>
+    <div class="item">
+        <div class="item-title">Yaponiya Xəzinələri</div>
+        <div class="desc">AZ: Eksklüziv, incə və premium çay kolleksiyası</div>
+        <div class="desc">EN: Exclusive, refined and premium tea collection</div>
+        <div class="price">10 AZN</div>
+    </div>
 
 </div>
+
 </body>
 </html>
